@@ -6,11 +6,11 @@ make a copy of .env.dist.js with name .env.js and edit variable accordingly
 
 ## Development
 
-Steps to install ***node*** and ***npm***
-* `$ sudo apt-get install curl python-software-properties`
-* `$ sudo curl -sL https://deb.nodesource.com/setup_10.13.x | sudo -E bash -`
-* `$ sudo apt-get install nodejs`
-* `$ hash -r`
+* Steps to install ***node*** and ***npm***
+    * `$ sudo apt-get install curl python-software-properties`
+    * `$ sudo curl -sL https://deb.nodesource.com/setup_10.13.x | sudo -E bash -`
+    * `$ sudo apt-get install nodejs`
+    * `$ hash -r`
 
 * Install all the packages using npm:
   * `$ npm install`
