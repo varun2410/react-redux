@@ -4,6 +4,7 @@ import {bindActionCreators} from 'redux';
 import * as courseActions from '../../actions/courseActions';
 import CourseList from './CourseList';
 import {browserHistory} from 'react-router';
+import toastr from 'toastr';
 
 class CoursesPage extends React.Component {
   constructor(props, context) {
@@ -13,6 +14,10 @@ class CoursesPage extends React.Component {
 
   courseRow(course, index) {
     return <div key={index}>{course.title}</div>;
+  }
+
+  componentDidUpdate() {
+    toastr.success('Course Loaded');
   }
 
   redirectToAddCoursePage() {
